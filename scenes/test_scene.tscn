@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7vhbpkvvaxf6"]
+
+[ext_resource type="PackedScene" uid="uid://chaosqjw5n4bv" path="res://scenes/enemies/crab.tscn" id="1_g7g4h"]
+
+[node name="Scene" type="Node2D"]
+
+[node name="Crab" parent="." instance=ExtResource("1_g7g4h")]
+position = Vector2(86, 38)
+
+[node name="GUI" type="MarginContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 6.0
+
+[node name="Bars" type="VBoxContainer" parent="GUI"]
+layout_mode = 2
+
+[node name="Lifebar" type="HBoxContainer" parent="GUI/Bars"]
+layout_mode = 2
