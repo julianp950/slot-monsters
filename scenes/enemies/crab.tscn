@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://chaosqjw5n4bv"]
+[gd_scene load_steps=3 format=3 uid="uid://chaosqjw5n4bv"]
 
 [ext_resource type="Texture2D" uid="uid://dgqkqhd7ng7k5" path="res://assets/monsters/creature_002.png" id="1_0s1mp"]
+[ext_resource type="Script" uid="uid://cetpvn160n4qx" path="res://scenes/enemies/crab.gd" id="1_jpe3k"]
 
 [node name="Crab" type="Node2D"]
+script = ExtResource("1_jpe3k")
 
 [node name="sprCrab" type="Sprite2D" parent="."]
 texture = ExtResource("1_0s1mp")
