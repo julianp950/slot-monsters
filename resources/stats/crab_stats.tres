@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Stats" load_steps=2 format=3 uid="uid://cph6pxujia0oy"]
+
+[ext_resource type="Script" uid="uid://euegeytg8rgn" path="res://scripts/stats.gd" id="1_82mkg"]
+
+[resource]
+script = ExtResource("1_82mkg")
+max_hp = 100.0
+current_hp = 100.0

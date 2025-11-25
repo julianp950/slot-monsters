@@ -35,6 +35,6 @@ func _input(event: InputEvent) -> void:
 
 	if event.is_action_pressed("ui_accept") or (event is InputEventKey and event.keycode == KEY_SPACE):
 		if stopped == false:
-			crab.remove_health(round(value))
+			crab.take_damage(round(value))
 			sfx.play()
 			stopped = true
