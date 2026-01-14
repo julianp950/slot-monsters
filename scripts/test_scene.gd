@@ -4,7 +4,7 @@ var value: float = 0.0
 var speed: float = 200.0     # How fast it moves (units per second)
 var direction: int = 1       # 1 = going up, -1 = going down
 var stopped: bool = false
-@onready var label: Label = $GUI/force_str
+#@onready var label: Label = $GUI/force_str
 @onready var musicplayer: AudioStreamPlayer = $musicplayer
 @onready var sfx: AudioStreamPlayer2D = $sfxplayer
 
@@ -27,7 +27,7 @@ func _process(delta: float) -> void:
 		direction = 1
 	
 	# Update the UI text
-	label.text = str(round(value))
+	#label.text = str(round(value))
 
 
 func _input(event: InputEvent) -> void:

@@ -1,32 +1,21 @@
-[gd_scene load_steps=5 format=3 uid="uid://b7vhbpkvvaxf6"]
+[gd_scene load_steps=6 format=3 uid="uid://b7vhbpkvvaxf6"]
 
 [ext_resource type="PackedScene" uid="uid://chaosqjw5n4bv" path="res://scenes/enemies/crab.tscn" id="1_g7g4h"]
 [ext_resource type="Script" uid="uid://cn877fx7q6yiq" path="res://scripts/test_scene.gd" id="1_j8ivh"]
 [ext_resource type="AudioStream" uid="uid://blto1nd0roh5w" path="res://assets/music/testmusic.ogg" id="3_nd71p"]
 [ext_resource type="AudioStream" uid="uid://mflu2qto5h1b" path="res://assets/sfx/flipper2.ogg" id="4_7ddre"]
+[ext_resource type="PackedScene" uid="uid://dbjhxg6ifdds7" path="res://scenes/gui/in_game_gui.tscn" id="5_qjeyg"]
 
 [node name="Scene" type="Node2D"]
 script = ExtResource("1_j8ivh")
 
 [node name="Crab" parent="." instance=ExtResource("1_g7g4h")]
-position = Vector2(162, 48)
-
-[node name="GUI" type="MarginContainer" parent="."]
-offset_right = 305.0
-offset_bottom = 117.0
-
-[node name="Bars" type="VBoxContainer" parent="GUI"]
-layout_mode = 2
-
-[node name="Lifebar" type="HBoxContainer" parent="GUI/Bars"]
-layout_mode = 2
-
-[node name="force_str" type="Label" parent="GUI"]
-layout_mode = 2
-text = "PLACEHOLDER"
+position = Vector2(285, 160)
 
 [node name="musicplayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_nd71p")
 
 [node name="sfxplayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_7ddre")
+
+[node name="InGameGui" parent="." instance=ExtResource("5_qjeyg")]

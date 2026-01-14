@@ -7,6 +7,10 @@ extends Resource
 var is_dead: bool:
 	get:
 		return current_hp <= 0
+		
+var current_hp_percentage: float:
+	get:
+		return current_hp / max_hp * 100
 
 func take_damage(damage: float) ->  void:
 	current_hp -= damage
